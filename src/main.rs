@@ -32,7 +32,7 @@ fn get_name(file_name: &str, instruments: &Vec<Instrument>) -> Option<String> {
 }
 
 fn main() {
-    let settings_file = dirs::document_dir().unwrap().join("srt/settings.json");
+    let settings_file = dirs::document_dir().unwrap().join("stemfmt/settings.json");
     let mut file = fs::File::open(settings_file).unwrap();
 
     let mut settings_str: String = String::new();
