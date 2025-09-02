@@ -1,0 +1,188 @@
+  [
+    {
+      "prefix": "drm",
+      "invalid_names": [
+        "drum",
+        "drm"
+      ],
+      "keywords": [
+        {
+          "name": "rim",
+          "aliases": [
+            "sidestick",
+            "rimshot"
+          ]
+        },
+        {
+          "name": "kick",
+          "aliases": [
+            "bass drum",
+            "kik"
+          ]
+        },
+        {
+          "name": "snare",
+          "aliases": [
+            "snr"
+          ]
+        },
+        {
+          "name": "hi-hat",
+          "aliases": [
+            "foot hat",
+            "hat",
+            "chh",
+            "ohh"
+          ]
+        },
+        {
+          "name": "cym",
+          "aliases": [
+            "splash",
+            "china",
+            "crash",
+            "swell",
+            "gong",
+            "sweep",
+            "ride"
+          ]
+        },
+        {
+          "name": "tamb",
+          "aliases": [
+            "tambourine",
+            "tambo"
+          ]
+        },
+        {
+          "name": "shaker",
+          "aliases": [
+            "cabasa",
+            "maraca"
+          ]
+        },
+        {
+          "name": "drum",
+          "aliases": [
+            "drm"
+          ]
+        },
+        {
+          "name": "clap",
+          "aliases": []
+        },
+        {
+          "name": "tom",
+          "aliases": []
+        }
+      ],
+      "descriptors": [
+        "sample",
+        "break",
+        "live"
+      ]
+    },
+    {
+      "prefix": "vox",
+      "invalid_names": [
+        "vocal",
+        "vox"
+      ],
+      "keywords": [
+        {
+          "name": "bgv",
+          "aliases": [
+            "harmony",
+            "harm",
+            "bgv",
+            "bv"
+          ]
+        },
+        {
+          "name": "adlib",
+          "aliases": []
+        },
+        {
+          "name": "ld vox",
+          "aliases": [
+            "lead"
+          ]
+        },
+        {
+          "name": "dbl",
+          "aliases": [
+            "double"
+          ]
+        }
+      ],
+      "descriptors": []
+    },
+    {
+      "prefix": "gtr",
+      "invalid_names": [
+        "guitar",
+        "gtr"
+      ],
+      "keywords": [
+        {
+          "name": "gtr",
+          "aliases": [
+            "guitar"
+          ]
+        },
+        {
+          "name": "elec",
+          "aliases": [
+            "electric"
+          ]
+        },
+        {
+          "name": "acoustic",
+          "aliases": []
+        },
+        {
+          "name": "uke",
+          "aliases": [
+            "ukelele"
+          ]
+        },
+        {
+          "name": "pedal steel",
+          "aliases": []
+        }
+      ],
+      "descriptors": []
+    },
+    {
+      "prefix": "bass",
+      "invalid_names": [
+        "bass"
+      ],
+      "keywords": [
+        {
+          "name": "bass",
+          "aliases": []
+        },
+        {
+          "name": "elec",
+          "aliases": [
+            "electric"
+          ]
+        },
+        {
+          "name": "upright",
+          "aliases": []
+        },
+        {
+          "name": "sub",
+          "aliases": [
+            "808"
+          ]
+        }
+      ],
+      "descriptors": [
+        "acoustic",
+        "upright"
+      ]
+    }
+  ]
