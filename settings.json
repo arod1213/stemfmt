@@ -111,6 +111,10 @@
           ]
         },
         {
+          "name": "vox",
+          "aliases": []
+        },
+        {
           "name": "adlib",
           "aliases": []
         },
@@ -150,6 +154,10 @@
         },
         {
           "name": "acoustic",
+          "aliases": []
+        },
+        {
+          "name": "nylon",
           "aliases": []
         },
         {
@@ -233,6 +241,10 @@
           "aliases": [
             "drone"
           ]
+        },
+        {
+          "name": "keys",
+          "aliases": []
         }
       ],
       "descriptors": []
@@ -290,6 +302,13 @@
             "swell",
             "sweep",
             "swoosh"
+          ]
+        },
+        {
+          "name": "ambience",
+          "aliases": [
+            "crackle",
+            "hiss"
           ]
         },
         {
