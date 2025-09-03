@@ -69,11 +69,23 @@
         },
         {
           "name": "clap",
-          "aliases": []
+          "aliases": [
+            "snap"
+          ]
         },
         {
           "name": "tom",
           "aliases": []
+        },
+        {
+          "name": "break",
+          "aliases": []
+        },
+        {
+          "name": "fill",
+          "aliases": [
+            "flam"
+          ]
         }
       ],
       "descriptors": [
@@ -184,5 +196,107 @@
         "acoustic",
         "upright"
       ]
+    },
+    {
+      "prefix": "keys",
+      "invalid_names": [
+        "keys"
+      ],
+      "keywords": [
+        {
+          "name": "piano",
+          "aliases": [
+            "pno"
+          ]
+        },
+        {
+          "name": "rhodes",
+          "aliases": []
+        },
+        {
+          "name": "wurli",
+          "aliases": []
+        },
+        {
+          "name": "synth",
+          "aliases": [
+            "juptier",
+            "astrolab",
+            "voyager",
+            "juno",
+            "moog",
+            "obx",
+            "pad"
+          ]
+        }
+      ],
+      "descriptors": []
+    },
+    {
+      "prefix": "orch",
+      "invalid_names": [
+        "orch"
+      ],
+      "keywords": [
+        {
+          "name": "strings",
+          "aliases": [
+            "double bass",
+            "string",
+            "violin",
+            "viola",
+            "cello"
+          ]
+        },
+        {
+          "name": "sax",
+          "aliases": [
+            "bari",
+            "tenor",
+            "alto"
+          ]
+        },
+        {
+          "name": "brass",
+          "aliases": [
+            "trombone",
+            "trumpet",
+            "horns",
+            "horn"
+          ]
+        }
+      ],
+      "descriptors": []
+    },
+    {
+      "prefix": "fx",
+      "invalid_names": [
+        "fx"
+      ],
+      "keywords": [
+        {
+          "name": "fx",
+          "aliases": []
+        },
+        {
+          "name": "riser",
+          "aliases": [
+            "swell",
+            "sweep",
+            "swoosh"
+          ]
+        },
+        {
+          "name": "chimes",
+          "aliases": []
+        },
+        {
+          "name": "impact",
+          "aliases": [
+            "boom"
+          ]
+        }
+      ],
+      "descriptors": []
     }
   ]

@@ -32,8 +32,10 @@ fn get_name(file_name: &str, instruments: &Vec<Instrument>) -> Option<String> {
 }
 
 fn main() {
-    let settings_file = dirs::document_dir().unwrap().join("stemfmt/settings.json");
-    let mut file = fs::File::open(settings_file).unwrap();
+    let settings_file = dirs::document_dir()
+        .expect("could not find Documents folder")
+        .join("stemfmt/settings.json");
+    let mut file = fs::File::open(settings_file).expect("no settings file found");
 
     let mut settings_str: String = String::new();
     file.read_to_string(&mut settings_str).unwrap();
@@ -83,7 +85,7 @@ fn main() {
     info.iter()
         .filter(|(k, _)| *k == true)
         .for_each(|(_, (a, b))| {
-            println!("{}: {} -> {}", descriptor, a, b);
+            println!("{}: {:<20} -> {:<20}", descriptor, a, b);
             ()
         });
     info.iter()

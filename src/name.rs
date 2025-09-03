@@ -49,15 +49,16 @@ impl Keyword {
 }
 
 pub fn get_new_name(name: &str, inst: &Instrument) -> Option<String> {
+    let name = name.to_lowercase();
     let keywords: Vec<&str> = inst.keywords.iter().flat_map(|x| x.as_vec()).collect();
     let keyword_regex = get_regex(&keywords);
-    let keyword_matches: Vec<&str> = keyword_regex.find_iter(name).map(|x| x.as_str()).collect();
+    let keyword_matches: Vec<&str> = keyword_regex.find_iter(&name).map(|x| x.as_str()).collect();
     if keyword_matches.len() == 0 {
         return None;
     }
 
     let rest_str = keyword_regex
-        .replace_all(name, "")
+        .replace_all(&name, "")
         .replace("  ", " ") // single space max
         .to_string();
 
@@ -67,7 +68,10 @@ pub fn get_new_name(name: &str, inst: &Instrument) -> Option<String> {
         .filter(|x| !inst.invalid_names.contains(x) && !x.is_empty())
         .map(|x| match main_keywords.contains(&x.to_string()) {
             true => x,
-            _ => keyword_from_alias(&x, inst).unwrap(),
+            _ => match keyword_from_alias(&x, inst) {
+                Some(v) => v,
+                None => panic!("no keyword from {:?}", x),
+            },
         })
         .collect();
     let mut name_parts = Vec::from_iter(name_parts);
