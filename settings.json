@@ -225,8 +225,13 @@
             "voyager",
             "juno",
             "moog",
-            "obx",
-            "pad"
+            "obx"
+          ]
+        },
+        {
+          "name": "pad",
+          "aliases": [
+            "drone"
           ]
         }
       ],
@@ -242,6 +247,7 @@
           "name": "strings",
           "aliases": [
             "double bass",
+            "strings",
             "string",
             "violin",
             "viola",
